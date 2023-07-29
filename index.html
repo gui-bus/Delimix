@@ -79,6 +79,9 @@
       defer
     ></script>
 
+    <!-- ?AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>DeliMix - Lanches, Pizzas e muito mais. Tudo em um só Lugar!</title>
   </head>
 
@@ -94,7 +97,7 @@
           <img
             src="./src/img/DeliMix_Logo.png"
             alt="Logo"
-            class="w-24 md:w-28 h-auto flex items-center ml-3 mr-12 hover:scale-110 transition-transform transform duration-300"
+            class="w-24 md:w-28 h-auto flex items-center ml-5 mr-12 hover:scale-110 transition-transform transform duration-300"
           />
         </a>
 
@@ -151,7 +154,7 @@
         <div class="md:hidden flex flex-row space-x-3">
           <button
             id="menu-toggle"
-            class="flex items-center rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
+            class="flex items-center rounded-lg shadow-lg hover:scale-105 transition-all duration-300 mr-5"
           >
             <i
               class="fas fa-bars text-2xl text-black bg-mainYellow px-3 py-2 rounded-xl"
@@ -207,6 +210,8 @@
       <section
         id="main"
         class="relative w-screen overflow-hidden font-montserrat"
+        data-aos="fade-up"
+        data-aos-duration="1500"
       >
         <div
           class="flex flex-col justify-center items-center mx-auto mt-36 text-center"
@@ -332,6 +337,8 @@
         />
         <div
           class="flex flex-col-reverse md:flex-row md:space-x-8 space-y-0 md:space-y-0 justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <div
             class="flex flex-col text-center md:text-left justify-center md:justify-start items-center md:items-start pt-16"
@@ -383,6 +390,8 @@
 
         <div
           class="flex flex-col justify-center items-center mx-auto text-center w-96 z-10"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <p class="text-mainYellow tracking-widest font-bold text-xl">
             SERVIÇOS
@@ -446,6 +455,8 @@
         />
         <div
           class="flex flex-col justify-center items-center mx-auto text-center w-96"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <!-- ?Texts -->
           <p
@@ -716,6 +727,8 @@
         />
         <div
           class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0 md:space-x-5"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <!-- ?Sectiton img -->
           <div>
@@ -923,6 +936,8 @@
         />
         <div
           class="flex flex-col-reverse md:flex-row md:space-x-4 space-y-0 md:space-y-0 justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <div
             class="flex flex-col text-center md:text-left justify-center md:justify-start items-center md:items-start pt-16"
@@ -963,7 +978,11 @@
         id="FAQ"
         class="relative h-fit w-[80vw] mx-auto pb-28 md:pb-0 md:py-28 font-montserrat"
       >
-        <div class="container mx-auto px-4 py-8">
+        <div
+          class="container mx-auto px-4 py-8"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <p
             class="text-mainYellow uppercase tracking-widest text-lg font-medium"
           >
@@ -1171,6 +1190,10 @@
     <script src="./JavaScript/depo.js"></script>
     <script src="./JavaScript/whats.js"></script>
     <script src="./JavaScript/data.js"></script>
-    <script src="./JavaScript/cart.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
