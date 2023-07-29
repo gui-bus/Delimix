@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    border: 1px solid red;
+}
+   */
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.modal-full .h-screen {
+  height: 100vh;
+}
+
+
+/* !Estilo para limitar a largura do menu container e exibir 3 itens por linha */
+#menu-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+}
