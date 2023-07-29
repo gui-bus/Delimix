@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Desfrute de uma experiência gastronômica excepcional no DeliMix, onde você pode saborear uma variedade de delícias culinárias. Nossos pratos incluem lanches incríveis, pizzas artesanais feitas com ingredientes frescos, autêntica comida japonesa preparada com maestria, drinks refrescantes para acompanhar sua refeição e sobremesas irresistíveis que encantam o paladar. Venha desfrutar de uma jornada culinária inesquecível no DeliMix!"
+    />
+    <meta
+      name="keywords"
+      content="DeliMix, lanches, pizzas, gastronomia, comida, restaurante, experiência gastronômica, salgados, drinks, churrasco, bifes, steaks, sobremesas, doces"
+    />
+    <meta name="author" content="DeliMix - Guilherme Bustamante" />
+    <meta name="language" content="Português" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ?Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@DeliMixGourmet" />
+    <meta
+      name="twitter:title"
+      content="DeliMix - Lanches, Pizzas e muito mais. Tudo em um só Lugar!"
+    />
+    <meta
+      name="twitter:description"
+      content="Desfrute de uma experiência gastronômica excepcional no DeliMix, onde você pode saborear uma variedade de delícias culinárias."
+    />
+    <meta name="twitter:image" content="./src/img/DeliMix.png" />
+
+    <!-- ?Social Share -->
+    <meta
+      property="og:title"
+      content="DeliMix - Lanches, Pizzas e muito mais. Tudo em um só Lugar!"
+    />
+    <meta
+      property="og:description"
+      content="Desfrute de uma experiência gastronômica excepcional no DeliMix, onde você pode saborear uma variedade de delícias culinárias."
+    />
+    <meta property="og:image" content="./src/img/DeliMix.png" />
+    <meta property="og:url" content="gui-bus.github.io/DeliMix/" />
+    <meta property="og:type" content="website" />
+
+    <!-- ?Tailwind CSS -->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ?FavIcon -->
+    <link
+      rel="shortcut icon"
+      href="./src/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- ?FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ?Fonts - Montserrat & OpenSans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ?Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+
+    <title>DeliMix - Lanches, Pizzas e muito mais. Tudo em um só Lugar!</title>
+  </head>
+
+  <body class="bg-bodyWhite m-0 p-0 overflow-x-hidden text-charcoal">
+    <!-- ?Header -->
+    <header
+      class="bg-bodyWhite100 md:bg-bodyWhite fixed w-full py-2 z-50 font-medium font-montserrat"
+    >
+      <div
+        class="container mx-auto px-3 md:px-28 py-2 flex items-center justify-between"
+      >
+        <a href="#main">
+          <img
+            src="./src/img/DeliMix_Logo.png"
+            alt="Logo"
+            class="w-24 md:w-28 h-auto flex items-center ml-3 mr-12 hover:scale-110 transition-transform transform duration-300"
+          />
+        </a>
+
+        <nav class="hidden md:block">
+          <ul class="flex items-center space-x-8 font-montserrat font-bold">
+            <li
+              class="hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
+              <a href="#about">Sobre</a>
+            </li>
+            <li
+              class="hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
+              <a href="#services">Serviços</a>
+            </li>
+            <li
+              class="hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
+              <a href="#menu">Cardápio</a>
+            </li>
+            <li
+              class="hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
+              <a href="#customer-reviews">Depoimentos</a>
+            </li>
+            <li
+              class="hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
+              <a href="#reservations">Reservas</a>
+            </li>
+            <li
+              class="hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
+              <a href="#FAQ">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hidden md:block">
+          <a
+            id="btnWhats"
+            class="flex items-center space-x-3 bg-white px-5 py-2 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 ml-5"
+            href="#"
+            target="_blank"
+          >
+            <span class="font-medium">Faça seu pedido!</span>
+            <i
+              class="fab fa-whatsapp text-xl text-black bg-mainYellow p-2 rounded-xl"
+            ></i>
+          </a>
+        </div>
+
+        <!-- ?Mobile menu buttons -->
+        <div class="md:hidden flex flex-row space-x-3">
+          <button
+            id="menu-toggle"
+            class="flex items-center rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
+          >
+            <i
+              class="fas fa-bars text-2xl text-black bg-mainYellow px-3 py-2 rounded-xl"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ?Mobile header -->
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden bg-blue fixed w-full font-montserrat bg-bodyWhite100 fixed-menu z-50"
+    >
+      <ul class="py-4 px-2 space-y-4 text-center">
+        <li
+          class="hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+        >
+          <a href="#about" onclick="closeMobileMenu()">Sobre</a>
+        </li>
+        <li
+          class="block py-2 px-4 hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+        >
+          <a href="#services" onclick="closeMobileMenu()">Serviços</a>
+        </li>
+        <li
+          class="block py-2 px-4 hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+        >
+          <a href="#menu" onclick="closeMobileMenu()">Cardápio</a>
+        </li>
+        <li
+          class="block py-2 px-4 hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+        >
+          <a href="#customer-reviews" onclick="closeMobileMenu()"
+            >Depoimentos</a
+          >
+        </li>
+        <li
+          class="block py-2 px-4 hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+        >
+          <a href="#reservations" onclick="closeMobileMenu()">Reservas</a>
+        </li>
+        <li
+          class="block py-2 px-4 hover:text-mainYellow hover:scale-105 transition-all duration-300 cursor-pointer"
+        >
+          <a href="#FAQ" onclick="closeMobileMenu()">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- ?Banner -->
+      <section
+        id="main"
+        class="relative w-screen overflow-hidden font-montserrat"
+      >
+        <div
+          class="flex flex-col justify-center items-center mx-auto mt-36 text-center"
+        >
+          <div class="flex flex-col md:flex-row space-y-5 md:space-x-5">
+            <!-- ?Texts -->
+            <div
+              class="flex flex-col justify-center items-center md:items-start md:text-left mt-5"
+            >
+              <h1 class="font-montserrat text-4xl font-bold w-[25rem]">
+                Escolha sua <br />
+                comida<span class="text-mainYellow"> favorita.</span>
+              </h1>
+              <p class="text-base w-[22rem] md:w-96 mt-6">
+                Aproveite nosso cardápio! Escolha o que desejar e receba em sua
+                casa de forma rápida e segura.
+              </p>
+
+              <!-- ?Buttons -->
+              <div
+                class="flex flex-row items-center justify-center mt-6 md:space-y-0 space-x-4 text-sm"
+              >
+                <a
+                  class="bg-mainYellow text-white px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 font-medium cursor-pointer"
+                  href="#tabs"
+                >
+                  Ver Cardápio
+                </a>
+
+                <button
+                  class="md:hidden flex items-center space-x-3 bg-white px-3 py-2 rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
+                  id="btnWhatsMobile"
+                  href="#"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp bg-mainYellow p-2 rounded-xl"></i>
+                  <span class="font-medium"> Faça seu pedido!</span>
+                </button>
+              </div>
+
+              <!-- ?Socials -->
+              <div class="hidden md:block">
+                <div
+                  class="flex flex-row items-center justify-center mt-4 space-x-4"
+                >
+                  <a
+                    class="bg-white py-2 px-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer hover:text-mainYellow"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+
+                  <a
+                    class="bg-white py-2 px-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer hover:text-mainYellow"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+
+                  <a
+                    class="bg-white py-2 px-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer hover:text-mainYellow"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ?Burger img -->
+            <div class="relative">
+              <div
+                class="flex mx-auto items-center justify-center pt-9 selection:md:mt-0 w-80 md:w-96 h-auto"
+              >
+                <img src="./src/img/burguer.png" alt="Burger" class="z-20" />
+              </div>
+
+              <!-- ?Testimonials -->
+              <div class="mb-28">
+                <div class="relative hidden md:block z-30">
+                  <div
+                    id="testimonial-desktop"
+                    class="bg-white px-1 py-3 rounded-xl shadow-xl w-[21rem] absolute md:-right-20 md:-top-10 text-sm text-center"
+                  >
+                    <div class="testimonial-loading">
+                      <i
+                        class="fa-solid fa-circle-notch fa-spin text-xl py-[22px]"
+                        style="color: #ffb800"
+                      ></i>
+                    </div>
+                  </div>
+                  <span
+                    class="flex justify-end text-mainYellow font-semibold mt-1 mr-4"
+                  ></span>
+                </div>
+
+                <div class="relative md:hidden z-30 mb-14">
+                  <div
+                    id="testimonial-mobile"
+                    class="bg-white px-1 py-3 rounded-xl shadow-xl w-[21rem] text-sm text-center mx-auto my-4"
+                  >
+                    <div class="testimonial-loading">
+                      <i
+                        class="fa-solid fa-circle-notch fa-spin text-xl py-[22px]"
+                        style="color: #ffb800"
+                      ></i>
+                    </div>
+                  </div>
+                  <span
+                    class="flex justify-end text-mainYellow font-semibold mt-1 mr-5"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ?About -->
+      <section id="about" class="relative h-fit w-screen mb-32 font-montserrat">
+        <img
+          src="./src/img/bg-icons-2.png"
+          alt="Background"
+          class="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 w-screen p-8 hidden md:block"
+          style="z-index: -1"
+        />
+        <div
+          class="flex flex-col-reverse md:flex-row md:space-x-8 space-y-0 md:space-y-0 justify-center items-center"
+        >
+          <div
+            class="flex flex-col text-center md:text-left justify-center md:justify-start items-center md:items-start pt-16"
+          >
+            <p
+              class="text-mainYellow uppercase tracking-widest text-lg font-medium"
+            >
+              Sobre
+            </p>
+            <p class="text-2xl md:text-3xl font-bold mb-4">
+              O que é a DeliMix?
+            </p>
+            <p class="mb-4 w-80 md:w-[30rem]">
+              Bem-vindo à DeliMix, onde a gastronomia é a nossa paixão. Somos um
+              restaurante comprometido em criar experiências culinárias
+              excepcionais e sem igual.
+            </p>
+
+            <p class="mb-4 w-80 md:w-[30rem]">
+              Com lanches saborosos, pizzas artesanais, culinária japonesa
+              autêntica, drinks refrescantes e sobremesas irresistíveis,
+              oferecemos uma jornada culinária incrível.
+            </p>
+
+            <p class="mb-4 w-80 md:w-[30rem] font-semibold">
+              Venha desfrutar de uma jornada inesquecível na DeliMix!
+            </p>
+          </div>
+
+          <img
+            src="./src/img/about.svg"
+            alt="Sushi"
+            class="w-80 h-auto md:pt-28"
+          />
+        </div>
+      </section>
+
+      <!-- ?Services -->
+      <section
+        id="services"
+        class="relative h-fit w-screen md:mb-14 font-montserrat"
+      >
+        <img
+          src="./src/img/bg-icons-1.png"
+          alt="Background"
+          class="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 w-screen p-8 hidden md:block"
+          style="z-index: -1"
+        />
+
+        <div
+          class="flex flex-col justify-center items-center mx-auto text-center w-96 z-10"
+        >
+          <p class="text-mainYellow tracking-widest font-bold text-xl">
+            SERVIÇOS
+          </p>
+          <h1 class="text-3xl font-bold my-4 md:w-[28rem]">
+            Como são nossos serviços?
+          </h1>
+
+          <div
+            class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12 mt-6 mb-28 md:mb-36"
+          >
+            <!-- ?Services 01 -->
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="./src/img/icone-pedido.svg"
+                alt="Serviços 01 - Pedido fácil"
+                class="w-[6.5rem] h-auto"
+              />
+              <p class="text-2xl font-bold mt-4 mb-1">Pedido facilitado</p>
+              <p class="text-base text-gray-400 w-64">
+                Voce só precisa de alguns passos para pedir sua comida.
+              </p>
+            </div>
+
+            <!-- ?Services 02 -->
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="./src/img/icone-delivery.svg"
+                alt="Serviços 02 - Entrega veloz"
+                class="w-56 h-auto"
+              />
+              <p class="text-2xl font-bold mt-4 mb-1">Entrega veloz</p>
+              <p class="text-base text-gray-400 w-64">
+                Nossa entrega é sempre pontual, rápida e segura.
+              </p>
+            </div>
+
+            <!-- ?Services 03 -->
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="./src/img/icone-qualidade.svg"
+                alt="Serviços 01 - Melhor qualidade"
+                class="w-56 h-auto"
+              />
+              <p class="text-2xl font-bold mt-4 mb-1">Melhor qualidade</p>
+              <p class="text-base text-gray-400 w-64">
+                Além da rapidez na entrega, a qualidade também é o nosso forte.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ?Menu -->
+      <section id="menu" class="relative h-fit w-screen md:mb-14">
+        <img
+          src="./src/img/bg-icons-2.png"
+          alt="Background"
+          class="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 w-screen p-8 hidden md:block"
+          style="z-index: -1"
+        />
+        <div
+          class="flex flex-col justify-center items-center mx-auto text-center w-96"
+        >
+          <!-- ?Texts -->
+          <p
+            class="text-mainYellow tracking-widest font-bold text-xl font-montserrat"
+          >
+            CARDÁPIO
+          </p>
+          <h1 class="text-3xl font-bold my-4 md:w-[28rem] font-montserrat">
+            Conheça o nosso cardápio
+          </h1>
+
+          <!-- ?Tabs -->
+          <section id="tabs">
+            <!-- ?Tabs/Panels Container -->
+            <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+              <div class="bg-tabs"></div>
+              <!-- ?Desktop buttons -->
+              <div class="hidden md:block">
+                <div
+                  class="flex flex-wrap md:w-[60rem] justify-center items-center mx-auto mb-6 space-x-4"
+                >
+                  <button
+                    class="px-4 py-2 rounded-full bg-mainYellow text-gray-600 hover:text-softRed focus:outline-none"
+                    data-target="panel-1"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=512&id=1itCmhFEiqIW&format=png"
+                      alt="Burger"
+                      class="w-14 md:w-16 h-auto"
+                    />
+                  </button>
+
+                  <button
+                    class="px-4 py-2 rounded-full bg-gray-200 text-gray-600 hover:text-softRed focus:outline-none"
+                    data-target="panel-2"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=512&id=CYgFsQyxgTod&format=png"
+                      alt="Pizza"
+                      class="w-14 md:w-16 h-auto"
+                    />
+                  </button>
+
+                  <button
+                    class="px-4 py-2 rounded-full bg-gray-200 text-gray-600 hover:text-softRed focus:outline-none"
+                    data-target="panel-3"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=512&id=2AIrctH82xog&format=png"
+                      alt="Hotdog"
+                      class="w-14 md:w-16 h-auto"
+                    />
+                  </button>
+
+                  <button
+                    class="px-4 py-2 rounded-full bg-gray-200 text-gray-600 hover:text-softRed focus:outline-none"
+                    data-target="panel-4"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=512&id=R0Oy1T3-yKJT&format=png"
+                      alt="Taco"
+                      class="w-14 md:w-16 h-auto"
+                    />
+                  </button>
+
+                  <button
+                    class="px-4 py-2 rounded-full bg-gray-200 text-gray-600 hover:text-softRed focus:outline-none"
+                    data-target="panel-5"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=512&id=MSeo0pcLeg0A&format=png"
+                      alt="Fries"
+                      class="w-14 md:w-16 h-auto"
+                    />
+                  </button>
+
+                  <button
+                    class="px-4 py-2 rounded-full bg-gray-200 text-gray-600 hover:text-softRed focus:outline-none"
+                    data-target="panel-6"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=512&id=OraMXOKDcx6c&format=png"
+                      alt="Drink"
+                      class="w-14 md:w-16 h-auto"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <!-- ?Mobile buttons -->
+              <div class="md:hidden">
+                <!-- ?Buttons 1-2-3 -->
+                <div>
+                  <div
+                    class="flex flex-wrap md:w-[60rem] justify-center items-center mx-auto mb-6 space-x-4"
+                  >
+                    <button
+                      class="px-4 py-2 rounded-full bg-mainYellow focus:outline-none"
+                      data-target="panel-1"
+                    >
+                      <img
+                        src="https://img.icons8.com/?size=512&id=1itCmhFEiqIW&format=png"
+                        alt="Burger"
+                        class="w-14 md:w-16 h-auto"
+                      />
+                    </button>
+
+                    <button
+                      class="px-4 py-2 rounded-full bg-gray-200 focus:outline-none"
+                      data-target="panel-2"
+                    >
+                      <img
+                        src="https://img.icons8.com/?size=512&id=CYgFsQyxgTod&format=png"
+                        alt="Pizza"
+                        class="w-14 md:w-16 h-auto"
+                      />
+                    </button>
+
+                    <button
+                      class="px-4 py-2 rounded-full bg-gray-200 focus:outline-none"
+                      data-target="panel-3"
+                    >
+                      <img
+                        src="https://img.icons8.com/?size=512&id=2AIrctH82xog&format=png"
+                        alt="Hotdog"
+                        class="w-14 md:w-16 h-auto"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <!-- ?Buttons 4-5-6 -->
+                <div>
+                  <div
+                    class="flex flex-wrap md:w-[60rem] justify-center items-center mx-auto mb-6 space-x-4"
+                  >
+                    <button
+                      class="px-4 py-2 rounded-full bg-gray-200 text-gray-600 hover:text-softRed focus:outline-none"
+                      data-target="panel-4"
+                    >
+                      <img
+                        src="https://img.icons8.com/?size=512&id=R0Oy1T3-yKJT&format=png"
+                        alt="Taco"
+                        class="w-14 md:w-16 h-auto"
+                      />
+                    </button>
+
+                    <button
+                      class="px-4 py-2 rounded-full bg-gray-200 text-gray-600 hover:text-softRed focus:outline-none"
+                      data-target="panel-5"
+                    >
+                      <img
+                        src="https://img.icons8.com/?size=512&id=MSeo0pcLeg0A&format=png"
+                        alt="Fries"
+                        class="w-14 md:w-16 h-auto"
+                      />
+                    </button>
+
+                    <button
+                      class="px-4 py-2 rounded-full bg-gray-200 text-gray-600 hover:text-softRed focus:outline-none"
+                      data-target="panel-6"
+                    >
+                      <img
+                        src="https://img.icons8.com/?size=512&id=OraMXOKDcx6c&format=png"
+                        alt="Drink"
+                        class="w-14 md:w-16 h-auto"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="mb-6" />
+
+              <!-- ?Panels -->
+              <!-- TODO Painel de hambúrgueres -->
+              <div class="panel max-w-screen-2xl mx-auto" id="panel-1">
+                <div class="flex flex-col justify-center items-center mx-auto">
+                  <div
+                    id="menu-container-burgers"
+                    class="grid grid-cols-1 md:grid-cols-3 gap-4"
+                  >
+                    <!-- !Os itens de hambúrgueres serão adicionados via JavaScript -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- TODO Painel de pizzas -->
+              <div class="panel max-w-screen-2xl mx-auto" id="panel-2">
+                <div class="flex flex-col justify-center items-center mx-auto">
+                  <div
+                    id="menu-container-pizzas"
+                    class="grid grid-cols-1 md:grid-cols-3 gap-4"
+                  >
+                    <!-- !Os itens de pizzas serão adicionados via JavaScript -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- TODO Painel de hotdogs -->
+              <div class="panel max-w-screen-2xl mx-auto" id="panel-3">
+                <div class="flex flex-col justify-center items-center mx-auto">
+                  <div
+                    id="menu-container-hotdog"
+                    class="grid grid-cols-1 md:grid-cols-3 gap-4"
+                  >
+                    <!-- !Os itens de hotdogs serão adicionados via JavaScript -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- TODO Painel de taco -->
+              <div class="panel max-w-screen-2xl mx-auto" id="panel-4">
+                <div class="flex flex-col justify-center items-center mx-auto">
+                  <div
+                    id="menu-container-tacos"
+                    class="grid grid-cols-1 md:grid-cols-3 gap-4"
+                  >
+                    <!-- !Os itens de taco serão adicionados via JavaScript -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- TODO Painel de fries -->
+              <div class="panel max-w-screen-2xl mx-auto" id="panel-5">
+                <div class="flex flex-col justify-center items-center mx-auto">
+                  <div
+                    id="menu-container-fries"
+                    class="grid grid-cols-1 md:grid-cols-3 gap-4"
+                  >
+                    <!-- !Os itens de fries serão adicionados via JavaScript -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- TODO Painel de drink -->
+              <div class="panel max-w-screen-2xl mx-auto" id="panel-6">
+                <div class="flex flex-col justify-center items-center mx-auto">
+                  <div
+                    id="menu-container-drink"
+                    class="grid grid-cols-1 md:grid-cols-3 gap-4"
+                  >
+                    <!-- !Os itens de drink serão adicionados via JavaScript -->
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-mainYellow text-white px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 font-medium cursor-pointer md:w-[15vw] mx-auto mt-8"
+              >
+                <a href="#menu">Explorar mais opções</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ?Customer reviews -->
+      <section
+        id="customer-reviews"
+        class="relative h-fit w-screen md:mb-14 font-montserrat mb-24"
+      >
+        <img
+          src="./src/img/bg-icons-1.png"
+          alt="Background"
+          class="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 w-screen p-8 hidden md:block"
+          style="z-index: -1"
+        />
+        <div
+          class="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0 md:space-x-5"
+        >
+          <!-- ?Sectiton img -->
+          <div>
+            <img
+              src="./src/img/reviews.svg"
+              alt="Reviews"
+              class="w-80 h-auto md:pb-0 pb-10"
+            />
+          </div>
+
+          <div
+            class="flex flex-col text-center md:text-left justify-center md:justify-start items-center md:items-start"
+          >
+            <p
+              class="text-mainYellow uppercase tracking-widest text-lg font-medium"
+            >
+              Depoimentos
+            </p>
+            <p class="text-2xl md:text-3xl font-bold mb-10">
+              O que dizem sobre nós?
+            </p>
+
+            <div class="depo mb-10" id="depo-1">
+              <!-- ?Costumer rating -->
+              <div
+                class="flex flex-row items-center justify-center md:justify-start"
+              >
+                <img
+                  src="./src/img/diego.jpg"
+                  alt="Diego"
+                  class="rounded-full object-cover w-14 h-14 mr-4"
+                />
+
+                <div class="flex flex-col">
+                  <p class="font-bold text-left">Diego Pereira</p>
+                  <span>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow mr-2"></i>
+                    5.0
+                  </span>
+                </div>
+              </div>
+
+              <!-- ?Costumer text -->
+              <div class="relative text-center md:text-left">
+                <span class="hidden md:block">
+                  <i
+                    class="fas fa-quote-left text-4xl text-mainYellow absolute -top-3 left-6"
+                  ></i>
+                </span>
+
+                <p
+                  class="w-72 md:w-96 md:ml-[72px] mt-5 text-center md:text-left"
+                >
+                  A Delimix é simplesmente incrível! Comida deliciosa,
+                  atendimento impecável e ambiente acolhedor. Recomendo com 5
+                  estrelas!
+                </p>
+                <span class="hidden md:block">
+                  <i
+                    class="fas fa-quote-right text-4xl text-mainYellow absolute left-[28.5rem] top-8"
+                  ></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="depo mb-10 hidden" id="depo-2">
+              <!-- ?Costumer rating -->
+              <div
+                class="flex flex-row items-center justify-center md:justify-start"
+              >
+                <img
+                  src="./src/img/ana.jpg"
+                  alt="Ana"
+                  class="rounded-full object-cover w-14 h-14 mr-4"
+                />
+
+                <div class="flex flex-col">
+                  <p class="font-bold text-left">Ana Rodrigues</p>
+                  <span>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-mainYellow mr-2"
+                    ></i>
+                    4.5
+                  </span>
+                </div>
+              </div>
+
+              <!-- ?Costumer text -->
+              <div class="relative text-center md:text-left">
+                <span class="hidden md:block">
+                  <i
+                    class="fas fa-quote-left text-4xl text-mainYellow absolute -top-3 left-6"
+                  ></i>
+                </span>
+
+                <p
+                  class="w-72 md:w-96 md:ml-[72px] mt-5 text-center md:text-left"
+                >
+                  Experiência fantástica! Comida deliciosa, atendimento
+                  atencioso e ambiente agradável. Quase perfeito! Recomendo com
+                  4.5 estrelas!
+                </p>
+                <span class="hidden md:block">
+                  <i
+                    class="fas fa-quote-right text-4xl text-mainYellow absolute left-[28.5rem] top-8"
+                  ></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="depo mb-10 hidden" id="depo-3">
+              <!-- ?Costumer rating -->
+              <div
+                class="flex flex-row items-center justify-center md:justify-start"
+              >
+                <img
+                  src="./src/img/joao.jpg"
+                  alt="João"
+                  class="rounded-full object-cover w-14 h-14 mr-4"
+                />
+
+                <div class="flex flex-col">
+                  <p class="font-bold text-left">João Marques</p>
+                  <span>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-solid fa-star text-mainYellow"></i>
+                    <i class="fa-regular fa-star text-mainYellow mr-2"></i>
+                    4.0
+                  </span>
+                </div>
+              </div>
+
+              <!-- ?Costumer text -->
+              <div class="relative text-center md:text-left">
+                <span class="hidden md:block">
+                  <i
+                    class="fas fa-quote-left text-4xl text-mainYellow absolute -top-3 left-6"
+                  ></i>
+                </span>
+
+                <p
+                  class="w-72 md:w-96 md:ml-[72px] mt-5 text-center md:text-left"
+                >
+                  A comida era saborosa, o atendimento foi bom, mas achei que o
+                  ambiente poderia ser mais convidativo. Recomendo com 4
+                  estrelas!
+                </p>
+                <span class="hidden md:block">
+                  <i
+                    class="fas fa-quote-right text-4xl text-mainYellow absolute left-[28.5rem] top-8"
+                  ></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- ?Botões -->
+            <div
+              class="flex flex-row items-center justify-center space-x-4 -mt-2"
+            >
+              <a
+                id="btn-1"
+                class="bg-mainYellow py-2 px-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+              >
+                1
+              </a>
+
+              <a
+                id="btn-2"
+                class="bg-white py-2 px-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+              >
+                2
+              </a>
+
+              <a
+                id="btn-3"
+                class="bg-white py-2 px-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+              >
+                3
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ?Reservations -->
+      <section
+        id="reservations"
+        class="relative h-fit w-screen pb-28 md:pb-0 md:py-28 font-montserrat"
+      >
+        <img
+          src="./src/img/bg-icons-2.png"
+          alt="Background"
+          class="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 w-screen p-8 hidden md:block"
+          style="z-index: -1"
+        />
+        <div
+          class="flex flex-col-reverse md:flex-row md:space-x-4 space-y-0 md:space-y-0 justify-center items-center"
+        >
+          <div
+            class="flex flex-col text-center md:text-left justify-center md:justify-start items-center md:items-start pt-16"
+          >
+            <p
+              class="text-mainYellow uppercase tracking-widest text-lg font-medium"
+            >
+              Reserva
+            </p>
+            <p class="text-2xl md:text-3xl font-bold mb-4">
+              Quer reservar um horário?
+            </p>
+            <p class="mb-4 w-80 md:w-[30rem]">
+              Mande uma mensagem clicando no botão abaixo e reserve sua data e
+              horário de forma simples e rápida.
+            </p>
+
+            <a
+              class="bg-mainYellow text-white px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 font-medium cursor-pointer"
+              id="btnReservation"
+              href="#"
+              target="_blank"
+            >
+              Fazer reserva
+            </a>
+          </div>
+
+          <img
+            src="./src/img/icone-reserva.png"
+            alt="Reservas"
+            class="w-80 md:w-96 h-auto"
+          />
+        </div>
+      </section>
+
+      <!-- ?FAQ -->
+      <section
+        id="FAQ"
+        class="relative h-fit w-[80vw] mx-auto pb-28 md:pb-0 md:py-28 font-montserrat"
+      >
+        <div class="container mx-auto px-4 py-8">
+          <p
+            class="text-mainYellow uppercase tracking-widest text-lg font-medium"
+          >
+            FAQ
+          </p>
+          <p class="text-2xl md:text-3xl font-bold mb-4">
+            Perguntas Frequentes
+          </p>
+
+          <div class="space-y-4">
+            <div class="bg-white p-4 rounded-lg shadow-xl">
+              <details class="cursor-pointer">
+                <summary class="font-bold">
+                  O cardápio possui opçoes veganas?
+                </summary>
+                <p class="text-gray-600 mt-2">
+                  Sim, temos várias opções em nosso cardápio, incluindo
+                  hambúrgueres e pizzas com ingredientes frescos e saborosos
+                  para atender aos clientes vegetarianos.
+                </p>
+              </details>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-xl">
+              <details class="cursor-pointer">
+                <summary class="font-bold">
+                  Posso fazer alterações nos ingredientes do meu pedido?
+                </summary>
+                <p class="text-gray-600 mt-2">
+                  Claro! Queremos que você tenha a melhor experiência possível
+                  com os nossos produtos. <br /><br />
+                  Se desejar fazer alguma alteração nos ingredientes do seu
+                  pedido, basta nos informar pelo WhatsApp. <br /><br />
+                  Teremos prazer em personalizar o seu pedido de acordo com as
+                  suas preferências.
+                </p>
+              </details>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-xl">
+              <details class="cursor-pointer">
+                <summary class="font-bold">
+                  Quanto tempo leva para a entrega chegar?
+                </summary>
+                <p class="text-gray-600 mt-2">
+                  O tempo de entrega pode variar de acordo com a demanda do
+                  momento e a sua localização. <br /><br />
+                  Nossa equipe de entrega trabalha rapidamente para entregar os
+                  pedidos o mais breve possível. Geralmente, o tempo médio de
+                  entrega é informado no momento do pedido. <br /><br />
+                  Tenha certeza de que faremos o nosso melhor para que você
+                  receba sua comida quentinha e saborosa!
+                </p>
+              </details>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-xl">
+              <details class="cursor-pointer">
+                <summary class="font-bold">
+                  Tem alguma promoção ou desconto especial?
+                </summary>
+                <p class="text-gray-600 mt-2">
+                  Sim, frequentemente oferecemos promoções especiais e descontos
+                  para nossos clientes. <br /><br />
+                  Fique de olho no nosso site e nas nossas redes sociais para
+                  receber as últimas novidades sobre nossas promoções.
+                  <br /><br />
+                  Adoramos recompensar nossos clientes com ofertas especiais
+                  para tornar sua experiência conosco ainda mais especial!
+                </p>
+              </details>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-xl">
+              <details class="cursor-pointer">
+                <summary class="font-bold">
+                  Aceitamos encomendas para eventos especiais?
+                </summary>
+                <p class="text-gray-600 mt-2">
+                  Sim, aceitamos encomendas para eventos especiais e
+                  confraternizações. <br /><br />
+                  Se você está planejando uma festa, reunião ou qualquer outro
+                  evento, entre em contato conosco com antecedência para
+                  discutir as opções disponíveis e fazer a sua encomenda
+                  personalizada. <br /><br />
+                  Teremos prazer em ajudar a tornar o seu evento ainda mais
+                  saboroso!
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ?Footer -->
+    <footer class="bg-bodyWhite100 text-gray-900 mt-16 md:mt-36">
+      <div class="container mx-auto py-8 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <!-- ?Logo & Info -->
+          <div class="md:col-span-2 text-center md:text-left">
+            <img
+              src="./src/img/DeliMix_Logo.png"
+              alt="Logo"
+              class="w-28 h-auto mx-auto md:ml-0 md:hidden pb-6"
+            />
+            <h3 class="text-2xl font-bold mb-4">Atendimento</h3>
+            <ul class="list-none space-y-2 mt-6">
+              <li>
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                Rua das Flores, 1234 - Jardins, SP
+              </li>
+              <li>
+                <i class="fab fa-whatsapp mr-2"></i>
+                (99) 9999-9999
+              </li>
+              <li>
+                <i class="fas fa-clock mr-2"></i>
+                Terça a Domingo, das 18h às 03h.
+              </li>
+              <li>
+                <i class="fas fa-truck mr-2"></i>
+                Terça a Domingo, das 19h às 01h.
+              </li>
+              <li>
+                <i class="fas fa-envelope mr-2"></i>
+                delimix@contato.com
+              </li>
+            </ul>
+          </div>
+
+          <!-- ?News -->
+          <div class="md:col-span-2 text-center md:text-left">
+            <h3 class="text-2xl font-bold mb-4">Não perca as novidades!</h3>
+            <p class="mb-2">
+              Quer receber as últimas atualizações e ofertas exclusivas da
+              DeliMix?
+            </p>
+            <p class="mb-6">
+              Não deixe passar, inscreva-se agora mesmo e faça parte da nossa
+              lista VIP!
+            </p>
+            <a
+              class="bg-mainYellow text-white px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 font-medium cursor-pointer"
+              id="btnNews"
+              href="#"
+              target="_blank"
+            >
+              Inscrever-se
+            </a>
+          </div>
+
+          <!-- ?Socials -->
+          <div class="md:col-span-1 text-center md:text-left">
+            <h3 class="text-2xl font-bold mb-4">Siga-nos</h3>
+            <ul class="flex flex-row justify-center md:justify-start space-x-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-2xl hover:text-mainYellow transition-colors duration-300"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-2xl hover:text-mainYellow transition-colors duration-300"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-2xl hover:text-mainYellow transition-colors duration-300"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ?Copy -->
+        <div class="mt-8 text-center">
+          <p class="text-sm">
+            &copy; 2023 Delimix. Todos os direitos reservados - Site
+            desenvolvido por
+            <a
+              href="https://www.linkedin.com/in/gui-bus/"
+              target="_blank"
+              class="underline hover:scale-105 transition-all duration-300 hover:text-mainYellow"
+              >Guilherme Bustamante.</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ?Scripts -->
+    <script src="./JavaScript/navBar.js"></script>
+    <script src="./JavaScript/testemonials.js"></script>
+    <script src="./JavaScript/smoothScroll.js"></script>
+    <script src="./JavaScript/menu.js"></script>
+    <script src="./JavaScript/depo.js"></script>
+    <script src="./JavaScript/whats.js"></script>
+    <script src="./JavaScript/data.js"></script>
+    <script src="./JavaScript/cart.js"></script>
+  </body>
+</html>
